@@ -11,11 +11,11 @@ module Howard
     end
 
     def prediction_time
-      Time.strptime("#{@api_response["prdt"]} America/Chicago", "%Y%m%d %H:%M:%S %Z")
+      Time.strptime(@api_response["prdt"], "%Y%m%d %H:%M:%S")
     end
 
     def arrival_time
-      Time.strptime("#{@api_response["arrT"]} America/Chicago", "%Y%m%d %H:%M:%S %Z")
+      Time.strptime(@api_response["arrT"], "%Y%m%d %H:%M:%S")
     end
 
     def eta

@@ -37,7 +37,6 @@ RSpec.describe Howard::Arrival do
       expect(arrival.prediction_time.hour).to eq(23)
       expect(arrival.prediction_time.min).to eq(26)
       expect(arrival.prediction_time.sec).to eq(12)
-      expect(arrival.prediction_time.zone).to eq("CDT")
     end
   end
 
@@ -50,7 +49,6 @@ RSpec.describe Howard::Arrival do
       expect(arrival.arrival_time.hour).to eq(23)
       expect(arrival.arrival_time.min).to eq(26)
       expect(arrival.arrival_time.sec).to eq(12)
-      expect(arrival.arrival_time.zone).to eq("CDT")
     end
   end
 
