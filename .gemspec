@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Howard::VERSION
   spec.authors       = ["Matthew Patterson"]
   spec.email         = ["matthew.s.patterson@gmail.com"]
-  spec.summary       = %q{Client for the CTA Train Tracker and Customer Alerts API}
-  spec.description   = %q{Client library for the Chicago Transit Authority's Train Tracker API and Customer Alerts API}
+  spec.summary       = %q{Unofficial client for the CTA Train Tracker API}
+  spec.description   = %q{Unofficial client library for the Chicago Transit Authority's Train Tracker API}
   spec.homepage      = "https://github.com/matthewpatterson/howard"
   spec.license       = "MIT"
 

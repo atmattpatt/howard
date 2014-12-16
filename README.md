@@ -1,6 +1,6 @@
 # Howard
 
-Client library for the Chicago Transit Authority's Train Tracker API and Customer Alerts API
+Unofficial client library for the Chicago Transit Authority's Train Tracker API
 
 ## Installation
 
@@ -43,6 +43,8 @@ arrivals.first.train.run # => "419"
 arrivals.first.train.latitude # => 41.97776
 arrivals.first.delayed? # => false
 arrivals.first.eta.to_s # => "2 min"
-arrivals.first.distance.miles # => 0.96
 ```
 
+## Fine Print
+
+This library is not affiliated with or endorsed by the Chicago Transit Authority.
