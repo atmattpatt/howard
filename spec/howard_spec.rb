@@ -1,4 +1,5 @@
 require "spec_helper"
+require "securerandom"
 
 RSpec.describe Howard do
   describe ".api_keys" do
