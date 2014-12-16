@@ -54,6 +54,26 @@ RSpec.describe Howard::Arrival do
     end
   end
 
+  describe "#eta" do
+    it "returns a Howard::TimeToArrival instance" do
+      arrival = Howard::Arrival.new(
+        "prdt" => "20110618 23:26:12",
+        "arrT" => "20110618 23:28:12",
+      )
+
+      expect(arrival.eta).to be_a(Howard::TimeToArrival)
+    end
+
+    it "shows the number time until the train arrives" do
+      arrival = Howard::Arrival.new(
+        "prdt" => "20110618 23:26:12",
+        "arrT" => "20110618 23:28:12",
+      )
+
+      expect(arrival.eta.to_s).to eq("2 min")
+    end
+  end
+
   describe "#approaching?" do
     it "is true when the train is approaching" do
       arrival = Howard::Arrival.new("isApp" => "1")

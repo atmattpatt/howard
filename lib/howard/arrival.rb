@@ -18,6 +18,10 @@ module Howard
       Time.strptime("#{@api_response["arrT"]} America/Chicago", "%Y%m%d %H:%M:%S %Z")
     end
 
+    def eta
+      @eta ||= TimeToArrival.new(self)
+    end
+
     def approaching?
       @api_response.fetch("isApp", "0") == "1"
     end
