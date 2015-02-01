@@ -2,6 +2,8 @@
 
 Unofficial client library for the Chicago Transit Authority's Train Tracker API
 
+[![Analytics](https://ga-beacon.appspot.com/UA-43004538-2/matthewpatterson/howard)](https://github.com/igrigorik/ga-beacon)
+
 ## Installation
 
 Add this line to your application's Gemfile:
