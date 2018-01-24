@@ -1,5 +1,6 @@
 require "howard/arrival"
 require "howard/arrivals_resource"
+require "howard/route"
 require "howard/time_to_arrival"
 require "howard/train"
 require "howard/train_tracker_gateway"

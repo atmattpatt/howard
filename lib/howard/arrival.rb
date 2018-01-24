@@ -6,6 +6,10 @@ module Howard
       @api_response = api_response
     end
 
+    def route
+      @route ||= Route.new(@api_response)
+    end
+
     def train
       @train ||= Train.new(@api_response)
     end
